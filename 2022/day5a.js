@@ -14,12 +14,9 @@
 
 //---------File interface
 const f = require('fs');
-const readline = require('readline');
 
-var pack_file = './day5.txt';
-var packs = readline.createInterface({
-    input : f.createReadStream(pack_file)
-});
+var in_file = './day5.txt';
+var readable = f.createReadStream(in_file);
 
 const NUM_OF_STACKS=9;
 //Create the array of stacks
